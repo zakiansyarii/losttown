@@ -76,8 +76,7 @@
     .hero-content { position: relative; z-index: 2; width: min(1120px, calc(100% - 48px)); margin: 70px auto 0; padding: 36px 0 80px; }
     .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; color: var(--gold); font: 500 1rem var(--pixel); letter-spacing: .1em; text-transform: uppercase; }
     .eyebrow::before { width: 34px; height: 2px; content: ""; background: var(--gold); box-shadow: 0 0 14px var(--gold); }
-    .brand-art { width: min(440px, 86vw); margin: 0 0 12px -10px; filter: drop-shadow(0 10px 24px rgba(8, 3, 18, .52)); animation: logo-arrive .9s .12s both cubic-bezier(.2,.8,.2,1); }
-    .hero-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; clip-path: inset(50%); }
+    .hero-title { margin: 0 0 12px -4px; color: var(--cream); font: 600 clamp(3.5rem, 8vw, 6.5rem)/.95 var(--pixel); letter-spacing: -.04em; text-transform: uppercase; text-shadow: 0 10px 24px rgba(8, 3, 18, .52); }
     .storyline { margin: 0 0 18px; color: #f0dff8; font: 500 clamp(1.05rem, 2vw, 1.35rem) var(--pixel); }
     .description { max-width: 510px; margin: 0; color: #e2d7ee; font-size: clamp(.98rem, 1.5vw, 1.08rem); }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 30px; }
@@ -199,7 +198,6 @@
     .feature-card.reveal:nth-child(2) { transition-delay: .08s; }
     .feature-card.reveal:nth-child(3) { transition-delay: .16s; }
     .feature-card.reveal:nth-child(4) { transition-delay: .24s; }
-    @keyframes logo-arrive { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
     @keyframes firefly { 0%, 100% { opacity: .25; transform: translate(0, 0); } 50% { opacity: 1; transform: translate(12px, -20px); } }
     @keyframes scroll-pulse { 0%, 100% { opacity: .45; transform: scaleY(.65); transform-origin: top; } 50% { opacity: 1; transform: scaleY(1); transform-origin: top; } }
     @keyframes stroll {
@@ -229,7 +227,6 @@
       .nav-links { gap: 16px; }
       .nav-links li:nth-child(1), .nav-links li:nth-child(2) { display: none; }
       .hero-content { margin: 0 auto; padding: 0 0 104px; }
-      .brand-art { width: min(365px, 92vw); margin-left: -8px; }
       .eyebrow { font-size: .86rem; }
       .storyline { font-size: 1.08rem; }
       .description { max-width: 420px; font-size: .97rem; }
@@ -291,8 +288,7 @@
     <span class="walker" aria-hidden="true"><img src="karakter.png" alt=""></span>
     <div class="hero-content">
       <p class="eyebrow">Petualangan misteri pixel art</p>
-      <h1 class="hero-title">Lost Town: Pulang</h1>
-      <img class="brand-art" src="logo%20(2).png" alt="Lost Town: Pulang">
+      <h1 class="hero-title">Lost Town</h1>
       <p class="storyline">Malam. Di kejauhan, ada cahaya.</p>
       <p class="description">Ia hanya ingin pulang. Jelajahi desa yang terlupakan, ikuti cahaya lentera, dan hindari bayangan yang mengintai di kegelapan.</p>
       <div class="actions">
